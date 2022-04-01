@@ -8,7 +8,7 @@ const BillList = () => {
       {bills.map((bill, index) => {
         return (
           <div key={index}>
-            <div>
+            <div className="container">
               <input
                 type="checkbox"
                 name=""
@@ -22,7 +22,8 @@ const BillList = () => {
                   })
                 }
               />
-              {bill.title} - Rp.{bill.monthlyCost}
+              {bill.title} - ${bill.monthlyCost}
+              <span class="checkmark"></span>
             </div>
           </div>
         );

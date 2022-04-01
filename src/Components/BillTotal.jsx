@@ -21,7 +21,7 @@ const BillTotal = () => {
   return (
     <div className="">
       <h5>{selectedCostInterval} Total :</h5>
-      {"Rp." +
+      {"$" +
         bills
           .reduce((acc, val) => {
             return val.enabled
@@ -31,7 +31,7 @@ const BillTotal = () => {
           .toFixed(2)}
       <hr />
       <h5>{selectedCostInterval} Total Saved :</h5>
-      {"Rp." +
+      {"$" +
         bills
           .reduce((acc, val) => {
             return !val.enabled //disabled

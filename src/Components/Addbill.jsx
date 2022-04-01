@@ -33,7 +33,7 @@ const Addbill = () => {
       <input
         type="number"
         className="btn"
-        placeholder="Enter bill Cost Rp."
+        placeholder="Enter bill Cost $ Monthly"
         value={newBillCost}
         onChange={(e) => setNewBillCost(e.target.value)}
       />
