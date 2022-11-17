@@ -4,6 +4,7 @@ import { BillContext } from "../Context/BillContext";
 const EditBill = () => {
   const { bills, setEditModeEnabled, EditCheckbox, DeleteBill } =
     useContext(BillContext);
+  console.count("render");
   return (
     <div className="">
       {bills.map((bill, billIndex) => {

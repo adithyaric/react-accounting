@@ -20,7 +20,7 @@ const Addbill = () => {
     setNewBillCost("");
     setNewBillTitle("");
   };
-
+  console.count("render");
   return (
     <div className="">
       <input

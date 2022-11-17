@@ -4,19 +4,18 @@ import { BillContext } from "../Context/BillContext";
 const BillOptions = () => {
   const { selectedCostInterval, setSelectedCostInterval } =
     useContext(BillContext);
+  console.count("render");
   return (
     <div className="">
       <div
-        className={
-          selectedCostInterval === "Daily" ? "btn btn-primary" : "btn"
-        }
+        className={selectedCostInterval === "Daily" ? "btn btn-primary" : "btn"}
         onClick={(e) => setSelectedCostInterval(e.target.innerText)}
       >
         Daily
       </div>
       <div
         className={
-          selectedCostInterval === "Weekly" ?"btn btn-primary" : "btn"
+          selectedCostInterval === "Weekly" ? "btn btn-primary" : "btn"
         }
         onClick={(e) => setSelectedCostInterval(e.target.innerText)}
       >
@@ -24,7 +23,7 @@ const BillOptions = () => {
       </div>
       <div
         className={
-          selectedCostInterval === "Monthly" ?"btn btn-primary" : "btn"
+          selectedCostInterval === "Monthly" ? "btn btn-primary" : "btn"
         }
         onClick={(e) => setSelectedCostInterval(e.target.innerText)}
       >
@@ -32,7 +31,7 @@ const BillOptions = () => {
       </div>
       <div
         className={
-          selectedCostInterval === "Yearly" ?"btn btn-primary" : "btn"
+          selectedCostInterval === "Yearly" ? "btn btn-primary" : "btn"
         }
         onClick={(e) => setSelectedCostInterval(e.target.innerText)}
       >

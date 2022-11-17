@@ -18,6 +18,7 @@ const BillTotal = () => {
         return 0;
     }
   };
+  console.count("render");
   return (
     <div className="">
       <h5>{selectedCostInterval} Total :</h5>

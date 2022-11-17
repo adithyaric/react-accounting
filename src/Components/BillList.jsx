@@ -3,6 +3,7 @@ import { BillContext } from "../Context/BillContext";
 
 const BillList = () => {
   const { bills, EditCheckbox, setEditModeEnabled } = useContext(BillContext);
+  console.count("render");
   return (
     <div className="">
       {bills.map((bill, index) => {
@@ -27,7 +28,7 @@ const BillList = () => {
             </div>
           </div>
         );
-      })}      
+      })}
       <div className="btn" onClick={() => setEditModeEnabled(true)}>
         Edit
       </div>
